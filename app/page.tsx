@@ -212,7 +212,13 @@ export default function Home() {
               className="group rounded-[1.75rem] border border-white/80 bg-white/58 p-3 shadow-sm backdrop-blur transition duration-300 hover:-translate-y-1.5 hover:shadow-soft"
               key={`${product.name}-${product.link}`}
             >
-              <div className={`relative aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-gradient-to-br ${product.palette}`}>
+              <a
+                aria-label={`Shop ${product.name} on Poshmark`}
+                className={`relative block aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-gradient-to-br ${product.palette}`}
+                href={product.link}
+                rel="noreferrer"
+                target="_blank"
+              >
                 {product.image ? (
                   <img
                     alt={product.name}
@@ -228,7 +234,7 @@ export default function Home() {
                 <span className="absolute left-4 top-4 rounded-full bg-white/75 px-3 py-1 text-xs font-bold text-rosewood">
                   {product.label}
                 </span>
-              </div>
+              </a>
               <div className="flex items-start justify-between gap-4 px-2 py-4">
                 <div className="min-w-0">
                   <h3 className="font-display text-xl font-medium leading-tight text-cocoa">{product.name}</h3>
