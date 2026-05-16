@@ -124,16 +124,16 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto grid w-full max-w-6xl items-center gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 lg:py-20">
+      <section className="mx-auto grid w-full max-w-6xl items-center gap-8 py-10 text-center sm:gap-10 sm:py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 md:text-left lg:py-20">
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-4 py-2 text-sm font-semibold leading-5 text-rosewood shadow-sm">
             <Sparkles size={16} />
             RamsClaiton.Cali boutique finds on Poshmark
           </div>
-          <h1 className="max-w-3xl text-[3.2rem] font-semibold leading-[1.04] text-cocoa sm:text-6xl lg:text-7xl">
+          <h1 className="mx-auto max-w-3xl text-[3.2rem] font-semibold leading-[1.04] text-cocoa sm:text-6xl md:mx-0 lg:text-7xl">
             Floral cotton bags with a soft boutique mood.
           </h1>
-          <p className="mt-5 max-w-xl text-base leading-7 text-cocoa/70 sm:text-lg">
+          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-cocoa/70 sm:text-lg md:mx-0">
             Organic cotton cosmetic pouches and travel bags in blush, sage, cream, and vintage-inspired floral prints.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="absolute bottom-[12.5rem] left-5 right-5 top-24 rounded-[1.5rem] border border-white/80 bg-white/45 p-3 backdrop-blur sm:bottom-48 sm:left-6 sm:right-6 sm:top-28 sm:p-4">
             <img
               alt={featuredProduct.name}
-              className="h-full w-full rounded-[1.25rem] bg-cream object-cover object-bottom shadow-sm sm:object-contain sm:p-3"
+              className="h-full w-full rounded-[1.25rem] bg-cream object-contain p-3 shadow-sm"
               src={featuredProduct.image}
             />
           </div>
@@ -189,8 +189,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="shop" className="mx-auto w-full max-w-6xl py-8 md:py-12">
-        <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
+      <section id="shop" className="mx-auto w-full max-w-6xl py-8 text-center md:py-12 md:text-left">
+        <div className="mb-7 flex flex-col items-center justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Product showcase</p>
             <h2 className="mt-2 text-3xl font-semibold text-cocoa sm:text-4xl">Pretty pieces ready to rehome</h2>
@@ -255,7 +255,7 @@ export default function Home() {
 
       <section
         id="instagram"
-        className="mx-auto my-10 flex w-full max-w-6xl flex-col items-start justify-between gap-6 rounded-[2rem] border border-petal/70 bg-white/62 p-6 shadow-sm backdrop-blur sm:p-8 md:flex-row md:items-center"
+        className="mx-auto my-10 flex w-full max-w-6xl flex-col items-center justify-between gap-6 rounded-[2rem] border border-petal/70 bg-white/62 p-6 text-center shadow-sm backdrop-blur sm:p-8 md:flex-row md:items-center md:text-left"
       >
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Social</p>
