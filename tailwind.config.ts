@@ -20,7 +20,8 @@ const config: Config = {
         soft: "0 18px 50px rgba(75, 51, 62, 0.14)",
       },
       fontFamily: {
-        sans: ["ui-sans-serif", "system-ui", "sans-serif"],
+        sans: ["Avenir Next", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["Avenir Next", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
       },
     },
   },

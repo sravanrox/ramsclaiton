@@ -87,7 +87,7 @@ export default function Home() {
             src={logoUrl}
           />
           <span>
-            <span className="block text-[1.7rem] font-semibold leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
+            <span className="block font-display text-[1.75rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
             <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:text-[11px] sm:tracking-[0.14em]">
               Organic Cotton Products
             </span>
@@ -130,7 +130,7 @@ export default function Home() {
             <Sparkles size={16} />
             RamsClaiton.Cali boutique finds on Poshmark
           </div>
-          <h1 className="mx-auto max-w-3xl text-[3.2rem] font-semibold leading-[1.04] text-cocoa sm:text-6xl md:mx-0 lg:text-7xl">
+          <h1 className="mx-auto max-w-3xl font-display text-[3.15rem] font-medium leading-[1.05] text-cocoa sm:text-6xl md:mx-0 lg:text-7xl">
             Floral cotton bags with a soft boutique mood.
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-cocoa/70 sm:text-lg md:mx-0">
@@ -172,7 +172,7 @@ export default function Home() {
             <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-blush sm:text-xs sm:tracking-[0.24em]">Featured listing</p>
             <div className="mt-2 flex items-end justify-between gap-4">
               <div>
-                <h2 className="text-xl font-semibold text-cocoa sm:text-2xl">{featuredProduct.name}</h2>
+                <h2 className="font-display text-2xl font-medium leading-tight text-cocoa sm:text-3xl">{featuredProduct.name}</h2>
                 <p className="mt-1 text-sm text-cocoa/65">{featuredProduct.meta}</p>
               </div>
               <a
@@ -193,7 +193,7 @@ export default function Home() {
         <div className="mb-7 flex flex-col items-center justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Product showcase</p>
-            <h2 className="mt-2 text-3xl font-semibold text-cocoa sm:text-4xl">Pretty pieces ready to rehome</h2>
+            <h2 className="mt-2 font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl">Pretty pieces ready to rehome</h2>
           </div>
           <a
             className="inline-flex w-fit items-center gap-2 rounded-full bg-petal px-5 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-blush hover:text-white"
@@ -231,7 +231,7 @@ export default function Home() {
               </div>
               <div className="flex items-start justify-between gap-4 px-2 py-4">
                 <div className="min-w-0">
-                  <h3 className="text-lg font-semibold text-cocoa">{product.name}</h3>
+                  <h3 className="font-display text-xl font-medium leading-tight text-cocoa">{product.name}</h3>
                   {product.description ? (
                     <p className="mt-2 text-sm leading-6 text-cocoa/65">{product.description}</p>
                   ) : null}
@@ -259,7 +259,7 @@ export default function Home() {
       >
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Social</p>
-          <h2 className="mt-2 text-3xl font-semibold text-cocoa">Daily styling notes and new-drop previews</h2>
+          <h2 className="mt-2 font-display text-4xl font-medium leading-tight text-cocoa">Daily styling notes and new-drop previews</h2>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row">
           <a
@@ -286,7 +286,7 @@ export default function Home() {
       <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-8 pb-14 pt-4 md:pb-20">
         <div className="rounded-[2rem] border border-white/80 bg-white/58 px-6 py-10 text-center shadow-sm backdrop-blur sm:px-10 sm:py-12 lg:px-20">
           <p className="text-base font-bold uppercase tracking-[0.26em] text-blush sm:text-lg">About Us</p>
-          <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold leading-tight text-cocoa sm:text-5xl lg:text-6xl">
+          <h2 className="mx-auto mt-4 max-w-3xl font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl lg:text-6xl">
             The beginning of RamsClaiton
           </h2>
           <div className="mx-auto mt-8 max-w-4xl space-y-5 text-left text-base leading-8 text-cocoa/72 sm:text-lg sm:leading-9">
