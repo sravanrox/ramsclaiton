@@ -1,4 +1,4 @@
-import { ArrowUpRight, Heart, Instagram, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowUpRight, Heart, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
 
 const poshmarkUrl = "https://poshmark.com/";
 const floralPouchUrl =
@@ -12,6 +12,7 @@ const pinkGreenPouchUrl =
 const pinkGreenHandleBagUrl =
   "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a535ff0320eaaea69023";
 const instagramUrl = "https://www.instagram.com/ramsclaiton.cali";
+const tiktokUrl = "https://www.tiktok.com/@ramsclaiton.cali";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const logoUrl = `${basePath}/ramsclaiton-logo.png`;
 
@@ -78,23 +79,49 @@ const featuredProduct = products[2];
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden px-4 py-5 text-cocoa sm:px-6 lg:px-10">
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 rounded-full border border-white/80 bg-white/55 px-4 py-3 shadow-sm backdrop-blur md:px-5">
-        <a className="flex items-center gap-2 text-sm font-semibold tracking-wide text-rosewood" href="#">
+      <header className="relative mx-auto grid w-full max-w-6xl gap-5 rounded-[2rem] border border-white/70 bg-white/38 px-5 py-5 shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center md:px-7 lg:grid-cols-[1fr_auto_1fr]">
+        <a className="flex items-center gap-4 text-rosewood" href="#">
           <img
             alt="RamsClaiton.Cali logo"
-            className="size-10 rounded-full border border-petal bg-cream object-cover shadow-sm"
+            className="size-14 rounded-full border-2 border-petal bg-cream object-cover shadow-sm"
             src={logoUrl}
           />
-          RamsClaiton.Cali
+          <span>
+            <span className="block text-2xl font-semibold leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
+            <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.14em] text-blush">
+              Organic Cotton Products
+            </span>
+          </span>
         </a>
-        <nav className="hidden items-center gap-6 text-sm font-medium text-cocoa/70 sm:flex">
-          <a className="transition hover:text-rosewood" href="#shop">
+        <a
+          aria-label="RamsClaiton.Cali home"
+          className="hidden rounded-full border border-white/80 bg-cream/80 p-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-soft lg:block"
+          href="#"
+        >
+          <img alt="RamsClaiton.Cali logo" className="size-24 rounded-full object-cover" src={logoUrl} />
+        </a>
+        <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+          <nav className="flex items-center gap-2 rounded-full border border-petal/60 bg-cream/70 p-1 text-sm font-bold text-cocoa/70">
+            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#shop">
+              Shop
+            </a>
+            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#instagram">
+              Social
+            </a>
+            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#about">
+              About
+            </a>
+          </nav>
+          <a
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-rosewood px-5 py-3 text-sm font-bold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-blush"
+            href={featuredProduct.link}
+            rel="noreferrer"
+            target="_blank"
+          >
             Shop
+            <ArrowUpRight size={16} />
           </a>
-          <a className="transition hover:text-rosewood" href="#instagram">
-            Instagram
-          </a>
-        </nav>
+        </div>
       </header>
 
       <section className="mx-auto grid w-full max-w-6xl items-center gap-10 py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 lg:py-20">
@@ -231,18 +258,61 @@ export default function Home() {
         className="mx-auto my-10 flex w-full max-w-6xl flex-col items-start justify-between gap-6 rounded-[2rem] border border-petal/70 bg-white/62 p-6 shadow-sm backdrop-blur sm:p-8 md:flex-row md:items-center"
       >
         <div>
-          <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Instagram</p>
+          <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Social</p>
           <h2 className="mt-2 text-3xl font-semibold text-cocoa">Daily styling notes and new-drop previews</h2>
         </div>
-        <a
-          className="inline-flex items-center justify-center gap-2 rounded-full bg-petal px-6 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-rosewood hover:text-white"
-          href={instagramUrl}
-          rel="noreferrer"
-          target="_blank"
-        >
-          <Instagram size={18} />
-          Follow on Instagram
-        </a>
+        <div className="flex flex-col gap-3 sm:flex-row">
+          <a
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-petal px-6 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-rosewood hover:text-white"
+            href={instagramUrl}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Instagram size={18} />
+            Instagram
+          </a>
+          <a
+            className="inline-flex items-center justify-center gap-2 rounded-full border border-petal bg-white/70 px-6 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-rosewood hover:text-white"
+            href={tiktokUrl}
+            rel="noreferrer"
+            target="_blank"
+          >
+            <Music2 size={18} />
+            TikTok
+          </a>
+        </div>
+      </section>
+
+      <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-8 pb-14 pt-4 md:pb-20">
+        <div className="rounded-[2rem] border border-white/80 bg-white/58 px-6 py-10 text-center shadow-sm backdrop-blur sm:px-10 sm:py-12 lg:px-20">
+          <p className="text-base font-bold uppercase tracking-[0.26em] text-blush sm:text-lg">About Us</p>
+          <h2 className="mx-auto mt-4 max-w-3xl text-4xl font-semibold leading-tight text-cocoa sm:text-5xl lg:text-6xl">
+            The beginning of RamsClaiton
+          </h2>
+          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-left text-base leading-8 text-cocoa/72 sm:text-lg sm:leading-9">
+            <p>
+              RamsClaiton was founded in California with a vision to create thoughtfully designed everyday essentials
+              inspired by timeless floral aesthetics, simplicity, and natural craftsmanship. What began as a small idea
+              rooted in creativity and comfort is growing into a lifestyle brand centered around elegance, softness, and
+              intentional design.
+            </p>
+            <p>
+              Our first collection focuses on floral-inspired pouches and bags crafted from 100% organic cotton ethically
+              sourced from India. Every piece is designed to feel both practical and beautiful, blending delicate patterns,
+              calming tones, and lightweight functionality for everyday use.
+            </p>
+            <p>
+              At RamsClaiton, we believe that fashion and accessories should feel personal, expressive, and connected to
+              nature. By working with organic materials and carefully curated designs, we aim to create products that feel
+              effortless, feminine, and timeless.
+            </p>
+            <p>
+              As the brand continues to grow, RamsClaiton plans to expand into clothing, accessories, and curated lifestyle
+              pieces that reflect the same values of comfort, craftsmanship, and understated beauty.
+            </p>
+            <p className="font-semibold text-rosewood">Thank you for being part of the beginning of our journey.</p>
+          </div>
+        </div>
       </section>
     </main>
   );
