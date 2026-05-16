@@ -78,17 +78,17 @@ const featuredProduct = products[2];
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden px-4 py-5 text-cocoa sm:px-6 lg:px-10">
-      <header className="relative mx-auto grid w-full max-w-6xl gap-5 rounded-[2rem] border border-white/70 bg-white/38 px-5 py-5 shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center md:px-7 lg:grid-cols-[1fr_auto_1fr]">
-        <a className="flex items-center gap-4 text-rosewood" href="#">
+    <main className="min-h-screen overflow-hidden px-4 py-4 text-cocoa sm:px-6 sm:py-5 lg:px-10">
+      <header className="relative mx-auto grid w-full max-w-6xl gap-4 rounded-[1.5rem] border border-white/70 bg-white/42 px-4 py-4 shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center sm:rounded-[2rem] sm:px-5 sm:py-5 md:px-7 lg:grid-cols-[1fr_auto_1fr]">
+        <a className="flex items-center gap-3 text-rosewood sm:gap-4" href="#">
           <img
             alt="RamsClaiton.Cali logo"
-            className="size-14 rounded-full border-2 border-petal bg-cream object-cover shadow-sm"
+            className="size-12 rounded-full border-2 border-petal bg-cream object-cover shadow-sm sm:size-14"
             src={logoUrl}
           />
           <span>
-            <span className="block text-2xl font-semibold leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
-            <span className="mt-1 block text-[11px] font-bold uppercase tracking-[0.14em] text-blush">
+            <span className="block text-[1.7rem] font-semibold leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
+            <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:text-[11px] sm:tracking-[0.14em]">
               Organic Cotton Products
             </span>
           </span>
@@ -101,19 +101,19 @@ export default function Home() {
           <img alt="RamsClaiton.Cali logo" className="size-24 rounded-full object-cover" src={logoUrl} />
         </a>
         <div className="flex flex-wrap items-center gap-2 sm:justify-end">
-          <nav className="flex items-center gap-2 rounded-full border border-petal/60 bg-cream/70 p-1 text-sm font-bold text-cocoa/70">
-            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#shop">
+          <nav className="grid w-full grid-cols-3 gap-1 rounded-full border border-petal/60 bg-cream/70 p-1 text-center text-sm font-bold text-cocoa/70 sm:flex sm:w-auto sm:items-center sm:gap-2">
+            <a className="rounded-full px-3 py-2 transition hover:bg-white hover:text-rosewood sm:px-4" href="#shop">
               Shop
             </a>
-            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#instagram">
+            <a className="rounded-full px-3 py-2 transition hover:bg-white hover:text-rosewood sm:px-4" href="#instagram">
               Social
             </a>
-            <a className="rounded-full px-4 py-2 transition hover:bg-white hover:text-rosewood" href="#about">
+            <a className="rounded-full px-3 py-2 transition hover:bg-white hover:text-rosewood sm:px-4" href="#about">
               About
             </a>
           </nav>
           <a
-            className="inline-flex items-center justify-center gap-2 rounded-full bg-rosewood px-5 py-3 text-sm font-bold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-blush"
+            className="hidden items-center justify-center gap-2 rounded-full bg-rosewood px-5 py-3 text-sm font-bold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-blush sm:inline-flex"
             href={featuredProduct.link}
             rel="noreferrer"
             target="_blank"
@@ -124,13 +124,13 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto grid w-full max-w-6xl items-center gap-10 py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 lg:py-20">
+      <section className="mx-auto grid w-full max-w-6xl items-center gap-8 py-10 sm:gap-10 sm:py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 lg:py-20">
         <div>
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-4 py-2 text-sm font-semibold text-rosewood shadow-sm">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-4 py-2 text-sm font-semibold leading-5 text-rosewood shadow-sm">
             <Sparkles size={16} />
             RamsClaiton.Cali boutique finds on Poshmark
           </div>
-          <h1 className="max-w-3xl text-5xl font-semibold leading-[1.02] text-cocoa sm:text-6xl lg:text-7xl">
+          <h1 className="max-w-3xl text-[3.2rem] font-semibold leading-[1.04] text-cocoa sm:text-6xl lg:text-7xl">
             Floral cotton bags with a soft boutique mood.
           </h1>
           <p className="mt-5 max-w-xl text-base leading-7 text-cocoa/70 sm:text-lg">
@@ -159,25 +159,25 @@ export default function Home() {
         <div className="relative mx-auto aspect-[4/5] w-full max-w-md">
           <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-petal via-cream to-sage shadow-soft" />
           <div className="absolute left-5 top-5 z-10 rounded-full border border-white/80 bg-white/70 p-2 shadow-sm backdrop-blur">
-            <img alt="RamsClaiton.Cali logo" className="size-20 rounded-full object-cover" src={logoUrl} />
+            <img alt="RamsClaiton.Cali logo" className="size-14 rounded-full object-cover sm:size-20" src={logoUrl} />
           </div>
-          <div className="absolute bottom-52 left-6 right-6 top-28 rounded-[1.5rem] border border-white/80 bg-white/45 p-4 backdrop-blur sm:bottom-48">
+          <div className="absolute bottom-[12.5rem] left-5 right-5 top-24 rounded-[1.5rem] border border-white/80 bg-white/45 p-3 backdrop-blur sm:bottom-48 sm:left-6 sm:right-6 sm:top-28 sm:p-4">
             <img
               alt={featuredProduct.name}
-              className="h-full w-full rounded-[1.25rem] bg-cream object-contain p-3 shadow-sm"
+              className="h-full w-full rounded-[1.25rem] bg-cream object-cover object-bottom shadow-sm sm:object-contain sm:p-3"
               src={featuredProduct.image}
             />
           </div>
-          <div className="absolute bottom-7 left-5 right-5 rounded-3xl bg-white/80 p-5 shadow-soft backdrop-blur">
-            <p className="text-xs font-bold uppercase tracking-[0.24em] text-blush">Featured listing</p>
+          <div className="absolute bottom-5 left-5 right-5 rounded-3xl bg-white/84 p-4 shadow-soft backdrop-blur sm:bottom-7 sm:p-5">
+            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-blush sm:text-xs sm:tracking-[0.24em]">Featured listing</p>
             <div className="mt-2 flex items-end justify-between gap-4">
               <div>
-                <h2 className="text-2xl font-semibold text-cocoa">{featuredProduct.name}</h2>
+                <h2 className="text-xl font-semibold text-cocoa sm:text-2xl">{featuredProduct.name}</h2>
                 <p className="mt-1 text-sm text-cocoa/65">{featuredProduct.meta}</p>
               </div>
               <a
                 aria-label={`Shop ${featuredProduct.name} on Poshmark`}
-                className="grid size-12 shrink-0 place-items-center rounded-full bg-petal text-rosewood transition hover:bg-rosewood hover:text-white"
+                className="grid size-11 shrink-0 place-items-center rounded-full bg-petal text-rosewood transition hover:bg-rosewood hover:text-white sm:size-12"
                 href={featuredProduct.link}
                 rel="noreferrer"
                 target="_blank"
