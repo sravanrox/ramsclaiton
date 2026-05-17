@@ -1,78 +1,11 @@
 import { ArrowUpRight, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
+import products from "./products";
 
 const poshmarkUrl = "https://poshmark.com/closet/ramsclaiton";
-const floralPouchUrl =
-  "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-pouch-inspired-by-doen-and-sezane-6a07aaa6c4e7b4e249fd456f";
-const bluePinkPouchUrl =
-  "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-pouch-inspired-by-doen-and-sezane-6a07aa511986c28d77098c3e";
-const blueGreenBagUrl =
-  "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a7ca9f19e263d908910f";
-const pinkGreenPouchUrl =
-  "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a8c22fa05405e6c548c2";
-const pinkGreenHandleBagUrl =
-  "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a535ff0320eaaea69023";
 const instagramUrl = "https://www.instagram.com/ramsclaiton.cali";
 const tiktokUrl = "https://www.tiktok.com/@ramsclaiton.cali";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const logoUrl = `${basePath}/ramsclaiton-logo.png`;
-
-const products = [
-  {
-    name: "Organic Cotton Floral Cosmetic Bag",
-    price: "$30",
-    label: "Top handle",
-    palette: "from-petal via-white to-emerald-100",
-    link: pinkGreenHandleBagUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a535ff0320eaaea69023/m_6a07a562f6035aea6eae7fff.jpg",
-    description: "Organic cotton floral bag with a top handle, zip closure, and plenty of space for daily carry.",
-    meta: "Pink / Green · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Bag",
-    price: "$30",
-    label: "Blue / Green",
-    palette: "from-blue-100 via-cream to-sage",
-    link: blueGreenBagUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
-    description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
-    meta: "Blue / Green · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Pouch",
-    price: "$25",
-    label: "Blue / Pink",
-    palette: "from-sky-100 via-cream to-petal",
-    link: bluePinkPouchUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aa511986c28d77098c3e/m_6a07aa6d05deb32fa470d3b5.jpg",
-    description: "Compact organic cotton pouch in floral block print with a durable zip closure.",
-    meta: "Blue / Pink · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Bag",
-    price: "$25",
-    label: "Soft floral",
-    palette: "from-petal via-cream to-sage",
-    link: pinkGreenPouchUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a8c22fa05405e6c548c2/m_6a07a8d388849ace66905944.jpg",
-    description: "Lightweight floral cotton pouch made for makeup, travel minis, and everyday essentials.",
-    meta: "Pink / Green · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Pouch",
-    price: "$25",
-    label: "White / Blue",
-    palette: "from-white via-cream to-petal",
-    link: floralPouchUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aaa6c4e7b4e249fd456f/m_6a07aae488849a9e2c906eb1.jpg",
-    description: "Block-print organic cotton pouch with zip closure for travel, makeup, and everyday essentials.",
-    meta: "White / Blue · OS · RAMS CLAITON",
-  },
-];
 
 const benefits = [
   {
@@ -166,7 +99,7 @@ export default function Home() {
             >
               <a
                 aria-label={`Shop ${product.name} on Poshmark`}
-                className={`relative block aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-gradient-to-br ${product.palette}`}
+                className="relative block aspect-[4/5] overflow-hidden rounded-[1.35rem] bg-gradient-to-br from-petal via-cream to-sage"
                 href={product.link}
                 rel="noreferrer"
                 target="_blank"

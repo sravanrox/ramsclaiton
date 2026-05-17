@@ -20,7 +20,8 @@ The site is a **Next.js static export** — it builds to plain HTML/CSS/JS files
 
 ```
 app/
-  page.tsx       ← all page content (products, nav, about, footer, social links)
+  products.ts    ← ★ edit this to add/update/remove products
+  page.tsx       ← page layout (nav, grid, about, footer) — rarely needs editing
   layout.tsx     ← SEO metadata, Open Graph, favicon, Google Fonts imports
   globals.css    ← background gradient, base styles
 tailwind.config.ts   ← custom color palette and font families
@@ -79,14 +80,15 @@ Then watch the deploy at https://github.com/sravanrox/ramsclaiton/actions — it
 
 ### Add or edit a product
 
-Open `app/page.tsx`. Find the `products` array near the top (around line 19). Each product looks like this:
+All product data lives in **`app/products.ts`** — this is the only file you need to touch for product changes. `page.tsx` just imports and displays whatever is in that file.
+
+Each product entry looks like this:
 
 ```ts
 {
   name: "Organic Cotton Floral Cosmetic Pouch",
   price: "$25",
-  label: "White / Blue",           // shown as a badge on the card image
-  palette: "from-white via-cream to-petal",  // fallback gradient if image fails
+  label: "White / Blue",           // badge shown over the card image
   link: "https://poshmark.com/listing/...",
   image: "https://di2ponv0v5otw.cloudfront.net/...",  // Poshmark CDN image URL
   description: "One-line description shown under the product name.",
@@ -94,7 +96,13 @@ Open `app/page.tsx`. Find the `products` array near the top (around line 19). Ea
 },
 ```
 
-**To get the Poshmark image URL:** open the listing, right-click the main photo → "Copy image address". Use the `m_` prefixed URL (medium size).
+**To get the Poshmark image URL:** open the listing, right-click the main photo → "Copy image address". Use the URL that starts with `https://di2ponv0v5otw.cloudfront.net/` and has `m_` in the filename — that's the medium size.
+
+**To add a new product:** paste a new object at the top (or wherever you want it in the grid) and push.
+
+**To update a product:** edit the relevant field in `app/products.ts` and push.
+
+**To remove a product:** delete its object from the array and push.
 
 ### Update social links
 
@@ -111,7 +119,7 @@ In `app/page.tsx`, search for `<section id="about"`. The paragraphs are plain `<
 
 ### Reorder products
 
-In `app/page.tsx`, the `products` array (around line 19) controls the order items appear in the grid. Current order:
+In `app/products.ts`, the order of objects in the array controls the order items appear in the grid. Current order:
 
 1. Pink / Green · Top handle ($30)
 2. Blue / Green ($30)
