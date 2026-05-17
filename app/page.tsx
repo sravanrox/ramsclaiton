@@ -105,12 +105,7 @@ export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden px-4 py-4 text-cocoa sm:px-6 sm:py-5 lg:px-10">
       <header className="relative mx-auto grid w-full max-w-6xl gap-4 rounded-[1.5rem] border border-white/70 bg-white/42 px-4 py-4 text-center shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center sm:rounded-[2rem] sm:px-5 sm:py-5 sm:text-left md:px-7 lg:grid-cols-[1fr_auto_1fr]">
-        <a className="flex flex-col items-center gap-3 text-rosewood sm:flex-row sm:gap-4" href="#">
-          <img
-            alt="RamsClaiton logo"
-            className="size-16 rounded-full border-2 border-petal bg-cream object-cover shadow-sm sm:size-14"
-            src={logoUrl}
-          />
+        <a className="flex flex-col items-center text-rosewood sm:flex-row" href="#">
           <span>
             <span className="block font-display text-[2rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton</span>
             <span className="mt-2 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:mt-1 sm:text-[11px] sm:tracking-[0.14em]">
