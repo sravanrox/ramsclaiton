@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Heart, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
 
 const poshmarkUrl = "https://poshmark.com/closet/ramsclaiton";
 const floralPouchUrl =
@@ -159,13 +159,6 @@ export default function Home() {
             >
               Explore the collection
               <ArrowDown size={17} />
-            </a>
-            <a
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-petal bg-white/65 px-6 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-white"
-              href="#shop"
-            >
-              View showcase
-              <Heart size={17} />
             </a>
           </div>
         </div>
