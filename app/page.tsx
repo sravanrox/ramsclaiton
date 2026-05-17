@@ -104,16 +104,16 @@ const benefits = [
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden px-4 py-4 text-cocoa sm:px-6 sm:py-5 lg:px-10">
-      <header className="relative mx-auto grid w-full max-w-6xl gap-4 rounded-[1.5rem] border border-white/70 bg-white/42 px-4 py-4 shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center sm:rounded-[2rem] sm:px-5 sm:py-5 md:px-7 lg:grid-cols-[1fr_auto_1fr]">
-        <a className="flex items-center gap-3 text-rosewood sm:gap-4" href="#">
+      <header className="relative mx-auto grid w-full max-w-6xl gap-4 rounded-[1.5rem] border border-white/70 bg-white/42 px-4 py-4 text-center shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center sm:rounded-[2rem] sm:px-5 sm:py-5 sm:text-left md:px-7 lg:grid-cols-[1fr_auto_1fr]">
+        <a className="flex flex-col items-center gap-3 text-rosewood sm:flex-row sm:gap-4" href="#">
           <img
             alt="RamsClaiton logo"
-            className="size-12 rounded-full border-2 border-petal bg-cream object-cover shadow-sm sm:size-14"
+            className="size-16 rounded-full border-2 border-petal bg-cream object-cover shadow-sm sm:size-14"
             src={logoUrl}
           />
           <span>
-            <span className="block font-display text-[1.75rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton</span>
-            <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:text-[11px] sm:tracking-[0.14em]">
+            <span className="block font-display text-[2rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton</span>
+            <span className="mt-2 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:mt-1 sm:text-[11px] sm:tracking-[0.14em]">
               Organic Cotton Products
             </span>
           </span>
@@ -125,7 +125,7 @@ export default function Home() {
         >
           <img alt="RamsClaiton logo" className="size-24 rounded-full object-cover" src={logoUrl} />
         </a>
-        <div className="flex flex-wrap items-center gap-2 sm:justify-end">
+        <div className="flex flex-wrap items-center justify-center gap-2 sm:justify-end">
           <nav className="grid w-full grid-cols-3 gap-1 rounded-full border border-petal/60 bg-cream/70 p-1 text-center text-sm font-bold text-cocoa/70 sm:flex sm:w-auto sm:items-center sm:gap-2">
             <a className="rounded-full px-3 py-2 transition hover:bg-white hover:text-rosewood sm:px-4" href="#shop">
               Shop
