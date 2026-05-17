@@ -210,8 +210,8 @@ export default function Home() {
                   {product.label}
                 </span>
               </a>
-              <div className="flex items-start justify-between gap-4 px-2 py-4">
-                <div className="min-w-0">
+              <div className="relative px-2 py-4 text-center md:flex md:items-start md:justify-between md:gap-4 md:text-left">
+                <div className="min-w-0 md:pr-14">
                   <h3 className="font-display text-xl font-medium leading-tight text-cocoa">{product.name}</h3>
                   {product.description ? (
                     <p className="mt-2 text-sm leading-6 text-cocoa/65">{product.description}</p>
@@ -221,7 +221,7 @@ export default function Home() {
                 </div>
                 <a
                   aria-label={`Shop ${product.name} on Poshmark`}
-                  className="grid size-11 shrink-0 place-items-center rounded-full bg-rosewood text-white transition duration-300 hover:rotate-6 hover:bg-blush"
+                  className="absolute right-2 top-4 grid size-11 place-items-center rounded-full bg-rosewood text-white transition duration-300 hover:rotate-6 hover:bg-blush md:right-0 md:top-4"
                   href={product.link}
                   rel="noreferrer"
                   target="_blank"
