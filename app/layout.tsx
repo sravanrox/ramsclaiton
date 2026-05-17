@@ -1,5 +1,20 @@
 import type { Metadata } from "next";
+import { Cormorant_Garamond, Great_Vibes } from "next/font/google";
 import "./globals.css";
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const greatVibes = Great_Vibes({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-script",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://ramsclaiton.com"),
@@ -61,7 +76,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${cormorant.variable} ${greatVibes.variable}`}>{children}</body>
     </html>
   );
 }

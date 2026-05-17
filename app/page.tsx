@@ -1,4 +1,4 @@
-import { ArrowDown, ArrowUpRight, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowUpRight, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
 
 const poshmarkUrl = "https://poshmark.com/closet/ramsclaiton";
 const floralPouchUrl =
@@ -17,6 +17,17 @@ const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const logoUrl = `${basePath}/ramsclaiton-logo.png`;
 
 const products = [
+  {
+    name: "Organic Cotton Floral Cosmetic Bag",
+    price: "$30",
+    label: "Blue / Green",
+    palette: "from-blue-100 via-cream to-sage",
+    link: blueGreenBagUrl,
+    image:
+      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
+    description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
+    meta: "Blue / Green · OS · RAMS CLAITON",
+  },
   {
     name: "Organic Cotton Floral Cosmetic Pouch",
     price: "$25",
@@ -38,17 +49,6 @@ const products = [
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aa511986c28d77098c3e/m_6a07aa6d05deb32fa470d3b5.jpg",
     description: "Compact organic cotton pouch in floral block print with a durable zip closure.",
     meta: "Blue / Pink · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Bag",
-    price: "$30",
-    label: "Blue / Green",
-    palette: "from-blue-100 via-cream to-sage",
-    link: blueGreenBagUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
-    description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
-    meta: "Blue / Green · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
@@ -135,35 +135,17 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto flex w-full max-w-5xl flex-col items-center py-12 text-center sm:py-16 lg:py-20">
-        <div>
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-4 py-2 text-sm font-semibold leading-5 text-rosewood shadow-sm">
-            <Sparkles size={16} />
+      <section id="shop" className="mx-auto w-full max-w-6xl py-8 text-center md:py-12 md:text-left">
+        <div className="mb-6 flex justify-center">
+          <div className="inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-5 py-2.5 text-sm font-semibold text-rosewood shadow-sm">
+            <Sparkles size={15} />
             RamsClaiton boutique finds on Poshmark
           </div>
-          <h1 className="mx-auto max-w-4xl font-display text-[3.15rem] font-medium leading-[1.05] text-cocoa sm:text-6xl lg:text-7xl">
-            Floral cotton bags with a soft boutique mood.
-          </h1>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-cocoa/70 sm:text-lg">
-            Organic cotton cosmetic pouches and travel bags in blush, sage, cream, and vintage-inspired floral prints.
-          </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-            <a
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-rosewood px-6 py-3 text-sm font-bold text-white shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-blush"
-              href="#shop"
-            >
-              Explore the collection
-              <ArrowDown size={17} />
-            </a>
-          </div>
         </div>
-      </section>
-
-      <section id="shop" className="mx-auto w-full max-w-6xl py-8 text-center md:py-12 md:text-left">
         <div className="mb-7 flex flex-col items-center justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Product showcase</p>
-            <h2 className="mt-2 font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl">Pretty pieces ready to rehome</h2>
+            <h2 className="mt-2 font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl">Pretty pieces ready to be shipped</h2>
           </div>
           <a
             className="inline-flex w-fit items-center gap-2 rounded-full bg-petal px-5 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-blush hover:text-white"
@@ -275,11 +257,12 @@ export default function Home() {
 
       <section id="about" className="mx-auto w-full max-w-6xl scroll-mt-8 pb-14 pt-4 md:pb-20">
         <div className="rounded-[2rem] border border-white/80 bg-white/58 px-6 py-10 text-center shadow-sm backdrop-blur sm:px-10 sm:py-12 lg:px-20">
-          <p className="text-base font-bold uppercase tracking-[0.26em] text-blush sm:text-lg">About Us</p>
+          <p className="text-sm font-bold uppercase tracking-[0.26em] text-blush">About</p>
           <h2 className="mx-auto mt-4 max-w-3xl font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl lg:text-6xl">
-            The beginning of RamsClaiton
+            The beginning of RamsClaiton,
           </h2>
-          <div className="mx-auto mt-8 max-w-4xl space-y-5 text-left text-base leading-8 text-cocoa/72 sm:text-lg sm:leading-9">
+          <p className="font-script mt-1 text-3xl text-blush sm:text-4xl lg:text-5xl">a brand born with love.</p>
+          <div className="mx-auto mt-8 max-w-3xl space-y-5 text-center text-base leading-8 text-cocoa/72 sm:text-lg sm:leading-9">
             <p>
               RamsClaiton was founded in California with a vision to create thoughtfully designed everyday essentials
               inspired by timeless floral aesthetics, simplicity, and natural craftsmanship. What began as a small idea
@@ -304,6 +287,50 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className="mx-auto w-full max-w-6xl pb-10 pt-2">
+        <div className="rounded-[2rem] border border-white/70 bg-white/42 px-6 py-8 backdrop-blur sm:px-10">
+          <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
+            <div className="text-center sm:text-left">
+              <p className="font-display text-2xl font-medium text-cocoa">
+                RamsClaiton <span className="font-script text-blush text-3xl">&amp;</span> Organic Cotton
+              </p>
+              <p className="mt-1 text-sm text-cocoa/55">Crafted with love — shop on Poshmark.</p>
+            </div>
+            <div className="flex gap-3">
+              <a
+                aria-label="Instagram"
+                className="grid size-11 place-items-center rounded-full bg-petal/50 text-rosewood transition duration-300 hover:bg-petal hover:-translate-y-0.5"
+                href={instagramUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Instagram size={18} />
+              </a>
+              <a
+                aria-label="TikTok"
+                className="grid size-11 place-items-center rounded-full bg-petal/50 text-rosewood transition duration-300 hover:bg-petal hover:-translate-y-0.5"
+                href={tiktokUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <Music2 size={18} />
+              </a>
+              <a
+                aria-label="Shop on Poshmark"
+                className="grid size-11 place-items-center rounded-full bg-petal/50 text-rosewood transition duration-300 hover:bg-petal hover:-translate-y-0.5"
+                href={poshmarkUrl}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <ShoppingBag size={18} />
+              </a>
+            </div>
+          </div>
+          <p className="mt-6 border-t border-petal/40 pt-5 text-center text-xs text-cocoa/40">
+            © 2026 RamsClaiton. Made with care.
+          </p>
+        </div>
+      </footer>
     </main>
   );
 }

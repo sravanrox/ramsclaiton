@@ -21,7 +21,8 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["Avenir Next", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
-        display: ["Avenir Next", "Inter", "ui-sans-serif", "system-ui", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        script: ["var(--font-script)", "cursive"],
       },
     },
   },
