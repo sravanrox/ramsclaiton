@@ -20,6 +20,17 @@ const products = [
   {
     name: "Organic Cotton Floral Cosmetic Bag",
     price: "$30",
+    label: "Top handle",
+    palette: "from-petal via-white to-emerald-100",
+    link: pinkGreenHandleBagUrl,
+    image:
+      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a535ff0320eaaea69023/m_6a07a562f6035aea6eae7fff.jpg",
+    description: "Organic cotton floral bag with a top handle, zip closure, and plenty of space for daily carry.",
+    meta: "Pink / Green · OS · RAMS CLAITON",
+  },
+  {
+    name: "Organic Cotton Floral Cosmetic Bag",
+    price: "$30",
     label: "Blue / Green",
     palette: "from-blue-100 via-cream to-sage",
     link: blueGreenBagUrl,
@@ -27,17 +38,6 @@ const products = [
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
     description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
     meta: "Blue / Green · OS · RAMS CLAITON",
-  },
-  {
-    name: "Organic Cotton Floral Cosmetic Pouch",
-    price: "$25",
-    label: "White / Blue",
-    palette: "from-white via-cream to-petal",
-    link: floralPouchUrl,
-    image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aaa6c4e7b4e249fd456f/m_6a07aae488849a9e2c906eb1.jpg",
-    description: "Block-print organic cotton pouch with zip closure for travel, makeup, and everyday essentials.",
-    meta: "White / Blue · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Pouch",
@@ -62,15 +62,15 @@ const products = [
     meta: "Pink / Green · OS · RAMS CLAITON",
   },
   {
-    name: "Organic Cotton Floral Cosmetic Bag",
-    price: "$30",
-    label: "Top handle",
-    palette: "from-petal via-white to-emerald-100",
-    link: pinkGreenHandleBagUrl,
+    name: "Organic Cotton Floral Cosmetic Pouch",
+    price: "$25",
+    label: "White / Blue",
+    palette: "from-white via-cream to-petal",
+    link: floralPouchUrl,
     image:
-      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a535ff0320eaaea69023/m_6a07a562f6035aea6eae7fff.jpg",
-    description: "Organic cotton floral bag with a top handle, zip closure, and plenty of space for daily carry.",
-    meta: "Pink / Green · OS · RAMS CLAITON",
+      "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aaa6c4e7b4e249fd456f/m_6a07aae488849a9e2c906eb1.jpg",
+    description: "Block-print organic cotton pouch with zip closure for travel, makeup, and everyday essentials.",
+    meta: "White / Blue · OS · RAMS CLAITON",
   },
 ];
 
