@@ -64,7 +64,7 @@ const products: Product[] = [
     meta: "Blue / Pink · OS · RAMSCLAITON",
   },
   {
-    name: "Organic Cotton Floral Cosmetic Bag",
+    name: "Organic Cotton Floral Cosmetic Pouch",
     price: "$25",
     label: "Soft floral",
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a8c22fa05405e6c548c2",
