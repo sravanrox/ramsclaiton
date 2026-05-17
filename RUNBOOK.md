@@ -16,14 +16,14 @@
 
 ## How it works
 
-The site is a **Next.js static export** — it builds to plain HTML/CSS/JS files in the `/out` folder, which GitHub Pages serves. There is no backend, no database, and no server to maintain. Everything lives in three source files:
+The site is a **Next.js static export** — it builds to plain HTML/CSS/JS files in the `/out` folder, which GitHub Pages serves. There is no backend, no database, and no server to maintain. Everything lives in these source files:
 
 ```
 app/
-  page.tsx       ← all page content (products, nav, about, social links)
-  layout.tsx     ← SEO metadata, Open Graph, favicon
+  page.tsx       ← all page content (products, nav, about, footer, social links)
+  layout.tsx     ← SEO metadata, Open Graph, favicon, Google Fonts imports
   globals.css    ← background gradient, base styles
-tailwind.config.ts   ← custom color palette and fonts
+tailwind.config.ts   ← custom color palette and font families
 public/
   ramsclaiton-logo.png   ← the logo used in the header and as favicon
 .github/workflows/
@@ -107,7 +107,19 @@ const tiktokUrl = "https://www.tiktok.com/@ramsclaiton.cali";
 
 ### Update the About Us text
 
-In `app/page.tsx`, search for `<section id="about"`. The paragraphs are plain `<p>` tags — edit them directly.
+In `app/page.tsx`, search for `<section id="about"`. The paragraphs are plain `<p>` tags — edit them directly. The script-font accent line just below the heading (`font-script`) can also be updated here.
+
+### Reorder products
+
+In `app/page.tsx`, the `products` array (around line 19) controls the order items appear in the grid. Current order:
+
+1. Pink / Green · Top handle ($30)
+2. Blue / Green ($30)
+3. Blue / Pink ($25)
+4. Pink / Green · Soft floral ($25)
+5. White / Blue ($25)
+
+Move objects within the array to change the display order.
 
 ### Update SEO / page title / description
 
@@ -116,6 +128,15 @@ Open `app/layout.tsx`. The `metadata` object at the top controls:
 - `description` — Google result snippet
 - `openGraph` — what shows when the link is shared on social media
 - `twitter` — Twitter/X card preview
+
+After updating metadata, Google won't reflect it immediately. To force a re-crawl, go to **Google Search Console → URL Inspection → https://ramsclaiton.com → Request Indexing**. Updates usually appear within 1–2 days.
+
+### Update the footer
+
+The footer is at the bottom of `app/page.tsx` inside the `<footer>` tag. It contains:
+- Brand name + script `&` + "Organic Cotton" tagline
+- Instagram, TikTok, and Poshmark icon links (pulled from the URL constants at the top of the file)
+- Copyright line — update the year manually if needed
 
 ### Replace the logo
 
@@ -131,20 +152,33 @@ git push origin main
 
 ## Design system
 
+### Colors
+
 The color palette is defined in `tailwind.config.ts` and used throughout `page.tsx`:
 
 | Token | Hex | Used for |
 |---|---|---|
-| `cream` | `#f8f3ea` | Page background |
+| `cream` | `#f8f3ea` | Page background base |
 | `petal` | `#f3c8d2` | Borders, soft accents |
 | `blush` | `#ef8fa3` | Subheadings, hover states |
 | `rosewood` | `#6f4654` | Primary buttons, brand text |
 | `cocoa` | `#4b333e` | Body text |
-| `sage` | `#d7deaa` | Green accents |
+| `sage` | `#d7deaa` | Green accents on product card gradients |
 
-The background gradient lives in `globals.css` — two soft radial blobs (pink top-left, sage bottom-right) over a cream base.
+The background gradient lives in `globals.css` — two soft radial blobs (pink top-left, sage bottom-right) over a warm cream base.
 
 Cards use Tailwind's `backdrop-blur` + semi-transparent white (`bg-white/58`) to create a frosted glass look.
+
+### Fonts
+
+Fonts are loaded via `next/font/google` in `app/layout.tsx` and exposed as CSS variables:
+
+| Variable | Font | Tailwind class | Used for |
+|---|---|---|---|
+| `--font-display` | Cormorant Garamond | `font-display` | All headings (h1–h3) |
+| `--font-script` | Great Vibes | `font-script` | Cursive accent lines |
+
+To use the script font on an element, add `font-script` (and usually `italic text-blush`) as Tailwind classes.
 
 ---
 
