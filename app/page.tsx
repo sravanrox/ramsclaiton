@@ -1,6 +1,6 @@
-import { ArrowUpRight, Heart, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Heart, Instagram, Music2, ShoppingBag, Sparkles } from "lucide-react";
 
-const poshmarkUrl = "https://poshmark.com/";
+const poshmarkUrl = "https://poshmark.com/closet/ramsclaiton";
 const floralPouchUrl =
   "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-pouch-inspired-by-doen-and-sezane-6a07aaa6c4e7b4e249fd456f";
 const bluePinkPouchUrl =
@@ -26,7 +26,7 @@ const products = [
     image:
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aaa6c4e7b4e249fd456f/m_6a07aae488849a9e2c906eb1.jpg",
     description: "Block-print organic cotton pouch with zip closure for travel, makeup, and everyday essentials.",
-    meta: "White / Blue · OS · ramyatati",
+    meta: "White / Blue · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Pouch",
@@ -37,18 +37,18 @@ const products = [
     image:
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aa511986c28d77098c3e/m_6a07aa6d05deb32fa470d3b5.jpg",
     description: "Compact organic cotton pouch in floral block print with a durable zip closure.",
-    meta: "Blue / Pink · OS · ramyatati",
+    meta: "Blue / Pink · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
     price: "$30",
-    label: "Featured listing",
+    label: "Blue / Green",
     palette: "from-blue-100 via-cream to-sage",
     link: blueGreenBagUrl,
     image:
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
     description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
-    meta: "Blue / Green · OS · ramyatati",
+    meta: "Blue / Green · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
@@ -59,7 +59,7 @@ const products = [
     image:
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a8c22fa05405e6c548c2/m_6a07a8d388849ace66905944.jpg",
     description: "Lightweight floral cotton pouch made for makeup, travel minis, and everyday essentials.",
-    meta: "Pink / Green · OS · ramyatati",
+    meta: "Pink / Green · OS · RAMS CLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
@@ -70,11 +70,9 @@ const products = [
     image:
       "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a535ff0320eaaea69023/m_6a07a562f6035aea6eae7fff.jpg",
     description: "Organic cotton floral bag with a top handle, zip closure, and plenty of space for daily carry.",
-    meta: "Pink / Green · OS · ramyatati",
+    meta: "Pink / Green · OS · RAMS CLAITON",
   },
 ];
-
-const featuredProduct = products[2];
 
 export default function Home() {
   return (
@@ -82,23 +80,23 @@ export default function Home() {
       <header className="relative mx-auto grid w-full max-w-6xl gap-4 rounded-[1.5rem] border border-white/70 bg-white/42 px-4 py-4 shadow-soft backdrop-blur-xl sm:grid-cols-[1fr_auto] sm:items-center sm:rounded-[2rem] sm:px-5 sm:py-5 md:px-7 lg:grid-cols-[1fr_auto_1fr]">
         <a className="flex items-center gap-3 text-rosewood sm:gap-4" href="#">
           <img
-            alt="RamsClaiton.Cali logo"
+            alt="RamsClaiton logo"
             className="size-12 rounded-full border-2 border-petal bg-cream object-cover shadow-sm sm:size-14"
             src={logoUrl}
           />
           <span>
-            <span className="block font-display text-[1.75rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton.Cali</span>
+            <span className="block font-display text-[1.75rem] font-medium leading-none tracking-wide sm:text-3xl">RamsClaiton</span>
             <span className="mt-1 block text-[10px] font-bold uppercase tracking-[0.12em] text-blush sm:text-[11px] sm:tracking-[0.14em]">
               Organic Cotton Products
             </span>
           </span>
         </a>
         <a
-          aria-label="RamsClaiton.Cali home"
+          aria-label="RamsClaiton home"
           className="hidden rounded-full border border-white/80 bg-cream/80 p-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-soft lg:block"
           href="#"
         >
-          <img alt="RamsClaiton.Cali logo" className="size-24 rounded-full object-cover" src={logoUrl} />
+          <img alt="RamsClaiton logo" className="size-24 rounded-full object-cover" src={logoUrl} />
         </a>
         <div className="flex flex-wrap items-center gap-2 sm:justify-end">
           <nav className="grid w-full grid-cols-3 gap-1 rounded-full border border-petal/60 bg-cream/70 p-1 text-center text-sm font-bold text-cocoa/70 sm:flex sm:w-auto sm:items-center sm:gap-2">
@@ -112,39 +110,28 @@ export default function Home() {
               About
             </a>
           </nav>
-          <a
-            className="hidden items-center justify-center gap-2 rounded-full bg-rosewood px-5 py-3 text-sm font-bold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-blush sm:inline-flex"
-            href={featuredProduct.link}
-            rel="noreferrer"
-            target="_blank"
-          >
-            Shop
-            <ArrowUpRight size={16} />
-          </a>
         </div>
       </header>
 
-      <section className="mx-auto grid w-full max-w-6xl items-center gap-8 py-10 text-center sm:gap-10 sm:py-12 md:grid-cols-[1.02fr_0.98fr] md:py-16 md:text-left lg:py-20">
+      <section className="mx-auto flex w-full max-w-5xl flex-col items-center py-12 text-center sm:py-16 lg:py-20">
         <div>
           <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-4 py-2 text-sm font-semibold leading-5 text-rosewood shadow-sm">
             <Sparkles size={16} />
-            RamsClaiton.Cali boutique finds on Poshmark
+            RamsClaiton boutique finds on Poshmark
           </div>
-          <h1 className="mx-auto max-w-3xl font-display text-[3.15rem] font-medium leading-[1.05] text-cocoa sm:text-6xl md:mx-0 lg:text-7xl">
+          <h1 className="mx-auto max-w-4xl font-display text-[3.15rem] font-medium leading-[1.05] text-cocoa sm:text-6xl lg:text-7xl">
             Floral cotton bags with a soft boutique mood.
           </h1>
-          <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-cocoa/70 sm:text-lg md:mx-0">
+          <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-cocoa/70 sm:text-lg">
             Organic cotton cosmetic pouches and travel bags in blush, sage, cream, and vintage-inspired floral prints.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
             <a
               className="inline-flex items-center justify-center gap-2 rounded-full bg-rosewood px-6 py-3 text-sm font-bold text-white shadow-soft transition duration-300 hover:-translate-y-1 hover:bg-blush"
-              href={featuredProduct.link}
-              rel="noreferrer"
-              target="_blank"
+              href="#shop"
             >
-              Shop featured listing
-              <ArrowUpRight size={17} />
+              Explore the collection
+              <ArrowDown size={17} />
             </a>
             <a
               className="inline-flex items-center justify-center gap-2 rounded-full border border-petal bg-white/65 px-6 py-3 text-sm font-bold text-rosewood transition duration-300 hover:-translate-y-1 hover:bg-white"
@@ -153,38 +140,6 @@ export default function Home() {
               View showcase
               <Heart size={17} />
             </a>
-          </div>
-        </div>
-
-        <div className="relative mx-auto aspect-[4/5] w-full max-w-md">
-          <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-br from-petal via-cream to-sage shadow-soft" />
-          <div className="absolute left-5 top-5 z-10 rounded-full border border-white/80 bg-white/70 p-2 shadow-sm backdrop-blur">
-            <img alt="RamsClaiton.Cali logo" className="size-14 rounded-full object-cover sm:size-20" src={logoUrl} />
-          </div>
-          <div className="absolute bottom-[12.5rem] left-5 right-5 top-24 rounded-[1.5rem] border border-white/80 bg-white/45 p-3 backdrop-blur sm:bottom-48 sm:left-6 sm:right-6 sm:top-28 sm:p-4">
-            <img
-              alt={featuredProduct.name}
-              className="h-full w-full rounded-[1.25rem] bg-cream object-contain p-3 shadow-sm"
-              src={featuredProduct.image}
-            />
-          </div>
-          <div className="absolute bottom-5 left-5 right-5 rounded-3xl bg-white/84 p-4 shadow-soft backdrop-blur sm:bottom-7 sm:p-5">
-            <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-blush sm:text-xs sm:tracking-[0.24em]">Featured listing</p>
-            <div className="mt-2 flex items-end justify-between gap-4">
-              <div>
-                <h2 className="font-display text-2xl font-medium leading-tight text-cocoa sm:text-3xl">{featuredProduct.name}</h2>
-                <p className="mt-1 text-sm text-cocoa/65">{featuredProduct.meta}</p>
-              </div>
-              <a
-                aria-label={`Shop ${featuredProduct.name} on Poshmark`}
-                className="grid size-11 shrink-0 place-items-center rounded-full bg-petal text-rosewood transition hover:bg-rosewood hover:text-white sm:size-12"
-                href={featuredProduct.link}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <Heart fill="currentColor" size={18} />
-              </a>
-            </div>
           </div>
         </div>
       </section>
