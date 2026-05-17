@@ -48,9 +48,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     siteName: "RamsClaiton",
-    title: "RamsClaiton | Organic Cotton Floral Bags & Pouches",
+    title: "RamsClaiton | Organic Cotton Products",
     description:
-      "Shop RamsClaiton organic cotton floral pouches and bags, designed in California with soft colors, practical details, and timeless boutique style.",
+      "Shop RamsClaiton organic cotton products, designed in California with soft colors, practical details, and timeless boutique style.",
     images: [
       {
         url: "/ramsclaiton-logo.png",
@@ -62,9 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "RamsClaiton | Organic Cotton Floral Bags & Pouches",
+    title: "RamsClaiton | Organic Cotton Products",
     description:
-      "Organic cotton floral pouches and bags inspired by timeless aesthetics, natural craftsmanship, and everyday elegance.",
+      "Organic cotton products inspired by timeless aesthetics, natural craftsmanship, and everyday elegance.",
     images: ["/ramsclaiton-logo.png"],
   },
 };
