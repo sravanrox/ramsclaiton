@@ -74,6 +74,33 @@ const products = [
   },
 ];
 
+const benefits = [
+  {
+    title: "Next-day shipping",
+    copy: "Orders are packed quickly so your new piece starts moving fast.",
+  },
+  {
+    title: "Carefully packaged",
+    copy: "Each bag is wrapped with care for a sweet, ready-to-open arrival.",
+  },
+  {
+    title: "Ships from California",
+    copy: "Packed and shipped from our California-based boutique.",
+  },
+  {
+    title: "5-star seller",
+    copy: "Friendly service, clear communication, and buyer-focused care.",
+  },
+  {
+    title: "100% organic cotton",
+    copy: "Made with soft organic cotton and floral block-print fabrics.",
+  },
+  {
+    title: "Small-batch design",
+    copy: "Limited drops with thoughtfully chosen prints and calming colors.",
+  },
+];
+
 export default function Home() {
   return (
     <main className="min-h-screen overflow-hidden px-4 py-4 text-cocoa sm:px-6 sm:py-5 lg:px-10">
@@ -209,6 +236,20 @@ export default function Home() {
                   <ShoppingBag size={18} />
                 </a>
               </div>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto w-full max-w-6xl py-8 md:py-12">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {benefits.map((benefit) => (
+            <article
+              className="rounded-[1.5rem] border border-petal/70 bg-white/72 p-5 text-center shadow-[0_12px_32px_rgba(111,70,84,0.08)] backdrop-blur transition duration-300 hover:-translate-y-1 hover:border-blush/70 hover:shadow-soft"
+              key={benefit.title}
+            >
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-blush">{benefit.title}</p>
+              <p className="mt-3 text-sm leading-6 text-cocoa/70">{benefit.copy}</p>
             </article>
           ))}
         </div>
