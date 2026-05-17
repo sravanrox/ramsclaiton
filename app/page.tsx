@@ -115,7 +115,7 @@ export default function Home() {
         </a>
         <a
           aria-label="RamsClaiton home"
-          className="hidden rounded-full border border-white/80 bg-cream/80 p-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-soft lg:block"
+          className="block justify-self-center rounded-full border border-white/80 bg-cream/80 p-2 shadow-sm transition duration-300 hover:-translate-y-0.5 hover:shadow-soft sm:hidden lg:block"
           href="#"
         >
           <img alt="RamsClaiton logo" className="size-24 rounded-full object-cover" src={logoUrl} />
