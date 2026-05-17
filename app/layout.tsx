@@ -4,14 +4,13 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://ramsclaiton.com"),
   title: {
-    default: "RamsClaiton.Cali | Organic Cotton Floral Bags & Pouches",
-    template: "%s | RamsClaiton.Cali",
+    default: "RamsClaiton | Organic Cotton Products",
+    template: "%s | RamsClaiton",
   },
   description:
-    "RamsClaiton.Cali creates thoughtfully designed organic cotton floral pouches and bags inspired by timeless aesthetics, natural craftsmanship, and everyday elegance.",
+    "RamsClaiton creates thoughtfully designed organic cotton floral pouches and bags inspired by timeless aesthetics, natural craftsmanship, and everyday elegance.",
   keywords: [
     "RamsClaiton",
-    "RamsClaiton.Cali",
     "organic cotton bags",
     "floral cosmetic pouch",
     "floral cosmetic bag",
@@ -19,9 +18,9 @@ export const metadata: Metadata = {
     "California boutique",
     "ethical accessories",
   ],
-  authors: [{ name: "RamsClaiton.Cali" }],
-  creator: "RamsClaiton.Cali",
-  publisher: "RamsClaiton.Cali",
+  authors: [{ name: "RamsClaiton" }],
+  creator: "RamsClaiton",
+  publisher: "RamsClaiton",
   alternates: {
     canonical: "/",
   },
@@ -33,22 +32,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    siteName: "RamsClaiton.Cali",
-    title: "RamsClaiton.Cali | Organic Cotton Floral Bags & Pouches",
+    siteName: "RamsClaiton",
+    title: "RamsClaiton | Organic Cotton Floral Bags & Pouches",
     description:
-      "Shop RamsClaiton.Cali organic cotton floral pouches and bags, designed in California with soft colors, practical details, and timeless boutique style.",
+      "Shop RamsClaiton organic cotton floral pouches and bags, designed in California with soft colors, practical details, and timeless boutique style.",
     images: [
       {
         url: "/ramsclaiton-logo.png",
         width: 1254,
         height: 1254,
-        alt: "RamsClaiton.Cali logo",
+        alt: "RamsClaiton logo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "RamsClaiton.Cali | Organic Cotton Floral Bags & Pouches",
+    title: "RamsClaiton | Organic Cotton Floral Bags & Pouches",
     description:
       "Organic cotton floral pouches and bags inspired by timeless aesthetics, natural craftsmanship, and everyday elegance.",
     images: ["/ramsclaiton-logo.png"],
