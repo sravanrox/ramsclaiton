@@ -43,7 +43,7 @@ const products: Product[] = [
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a535ff0320eaaea69023",
     image: "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a535ff0320eaaea69023/m_6a07a562f6035aea6eae7fff.jpg",
     description: "Organic cotton floral bag with a top handle, zip closure, and plenty of space for daily carry.",
-    meta: "Pink / Green · OS · RAMS CLAITON",
+    meta: "Pink / Green · OS · RAMSCLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
@@ -52,7 +52,7 @@ const products: Product[] = [
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a7ca9f19e263d908910f",
     image: "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a7ca9f19e263d908910f/m_6a07a7e088849a49ab904f07.jpg",
     description: "Organic cotton cosmetic bag with floral print, top handle, zip closure, and roomy travel storage.",
-    meta: "Blue / Green · OS · RAMS CLAITON",
+    meta: "Blue / Green · OS · RAMSCLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Pouch",
@@ -61,7 +61,7 @@ const products: Product[] = [
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-pouch-inspired-by-doen-and-sezane-6a07aa511986c28d77098c3e",
     image: "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aa511986c28d77098c3e/m_6a07aa6d05deb32fa470d3b5.jpg",
     description: "Compact organic cotton pouch in floral block print with a durable zip closure.",
-    meta: "Blue / Pink · OS · RAMS CLAITON",
+    meta: "Blue / Pink · OS · RAMSCLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Bag",
@@ -70,7 +70,7 @@ const products: Product[] = [
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-Bag-inspired-by-doen-and-sezane-6a07a8c22fa05405e6c548c2",
     image: "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07a8c22fa05405e6c548c2/m_6a07a8d388849ace66905944.jpg",
     description: "Lightweight floral cotton pouch made for makeup, travel minis, and everyday essentials.",
-    meta: "Pink / Green · OS · RAMS CLAITON",
+    meta: "Pink / Green · OS · RAMSCLAITON",
   },
   {
     name: "Organic Cotton Floral Cosmetic Pouch",
@@ -79,7 +79,7 @@ const products: Product[] = [
     link: "https://poshmark.com/listing/Organic-cotton-Floral-Cosmetic-pouch-inspired-by-doen-and-sezane-6a07aaa6c4e7b4e249fd456f",
     image: "https://di2ponv0v5otw.cloudfront.net/posts/2026/05/15/6a07aaa6c4e7b4e249fd456f/m_6a07aae488849a9e2c906eb1.jpg",
     description: "Block-print organic cotton pouch with zip closure for travel, makeup, and everyday essentials.",
-    meta: "White / Blue · OS · RAMS CLAITON",
+    meta: "White / Blue · OS · RAMSCLAITON",
   },
 ];
 
