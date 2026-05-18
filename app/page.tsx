@@ -68,14 +68,14 @@ export default function Home() {
         </div>
       </header>
 
-      <section id="shop" className="mx-auto w-full max-w-6xl py-8 text-center md:py-12 md:text-left">
+      <section id="shop" className="mx-auto w-full max-w-6xl py-8 text-center md:py-12">
         <div className="mb-6 flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full border border-petal/70 bg-white/60 px-5 py-2.5 text-sm font-semibold text-rosewood shadow-sm">
             <Sparkles size={15} />
             RamsClaiton boutique finds on Poshmark
           </div>
         </div>
-        <div className="mb-7 flex flex-col items-center justify-between gap-3 sm:flex-row sm:items-end">
+        <div className="mb-7 flex flex-col items-center gap-4 text-center">
           <div>
             <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Product showcase</p>
             <h2 className="mt-2 font-display text-4xl font-medium leading-tight text-cocoa sm:text-5xl">Pretty pieces ready to be shipped</h2>
@@ -160,7 +160,7 @@ export default function Home() {
 
       <section
         id="instagram"
-        className="mx-auto my-10 flex w-full max-w-6xl flex-col items-center justify-between gap-6 rounded-[2rem] border border-petal/70 bg-white/62 p-6 text-center shadow-sm backdrop-blur sm:p-8 md:flex-row md:items-center md:text-left"
+        className="mx-auto my-10 flex w-full max-w-6xl flex-col items-center gap-6 rounded-[2rem] border border-petal/70 bg-white/62 p-6 text-center shadow-sm backdrop-blur sm:p-8"
       >
         <div>
           <p className="text-sm font-bold uppercase tracking-[0.22em] text-blush">Social</p>
